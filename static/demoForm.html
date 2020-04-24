@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='qfc-dark.css') }}">
+  <!-- <link rel="stylesheet" href="qfc-light.css"> -->
+
+</head>
+
+<body>
+  <div class="qfc-container">
+    <h2>CyberBullying Detection</h2>
+    <label>Enter Twitter Comment id or You can Enter any comment to check whether it is Bullying or not.</label>
+    <form method="POST" action=".">
+      <div>
+        <div>
+          <label>Comment</label>
+          <div>
+            <textarea name="comt" placeholder="Eg. Enter your comment here">{{val}}</textarea>
+          </div>
+        </div>
+        <div>
+          <button id="btn2" type="submit">Submit</button>
+        </div>
+        <div>
+          <textarea placeholder="Results">{{res}}</textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+<div style="padding-bottom:15px; font-family: 'Roboto';color:white;" align="center">
+  Made by Ankit Kumar, Kartik Bhat & Pratik Chaudhari
+<style>
+  a {
+    color :#00bcd4;
+    text-decoration: none;
+  }
+</style>
+</html>
