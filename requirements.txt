@@ -6,3 +6,5 @@ sklearn
 nltk
 string
 re
+TwitterAPI
+
