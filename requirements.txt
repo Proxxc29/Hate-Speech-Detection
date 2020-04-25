@@ -4,7 +4,7 @@ numpy
 pandas
 sklearn
 nltk
-string
+strings
 re
 TwitterAPI
 
