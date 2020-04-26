@@ -1,10 +1,10 @@
 from TwitterAPI import TwitterAPI
 import json
 def make_request():
-    CONSUMERKEY="LRf0EXpyBaLkCFR9hkWImgooK"
-    CONSUMERSECRET="Vesl8u1BkGLI2hWHATqFEdl6zyjmIMgElTYnH7n7NlBa2XcIg4"
-    ACCESSTOKENKEY="1114550173495988224-HDXJ7gnqo91awp3gjaHYwwuZOINucP"
-    ACCESSTOKENSECRET="vfLitGPn7VX3ZLcAf7uhGucGzjPSsEekxcAt8F9MvfmZN"
+    CONSUMERKEY="your consumer_key"
+    CONSUMERSECRET="your consumer_secret"
+    ACCESSTOKENKEY="your access_token_key"
+    ACCESSTOKENSECRET="your access_token_secret"
     api =  TwitterAPI(CONSUMERKEY,CONSUMERSECRET,ACCESSTOKENKEY,ACCESSTOKENSECRET)
     r = api.request('statuses/filter', {'locations':'-87.9,41.6,-87.5,42.0'})
     return r 
